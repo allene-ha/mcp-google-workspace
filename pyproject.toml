@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-google-workspace"
+version = "1.0.0"
+description = "MCP server for Google Workspace (Sheets, Docs, Drive)"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [
+  { name="Allene Ha", email="allene.ha@banksalad.com" }, 
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "mcp>=0.2.0",
+    "google-auth",
+    "google-auth-oauthlib",
+    "google-auth-httplib2",
+    "google-api-python-client",
+    "pydantic",
+    "fastapi",
+    "uvicorn[standard]",
+]
+
+[project.scripts]
+mcp-google-workspace = "src.mcp_google_workspace.server:main"
+
+[project.urls]
+"Homepage" = "https://github.com/allene-ha/mcp-google-workspace"
+"Bug Tracker" = "https://github.com/allene-ha/mcp-google-workspace/issues"
