@@ -165,4 +165,4 @@ Claude Desktop에서 다음과 같이 사용할 수 있습니다:
 
 ## 📄 라이선스
 
-이 프로젝트는 MIT 라이선스 하에 배포됩니다. 
+이 프로젝트는 MIT 라이선스 하에 배포됩니다. # mcp-google-workspace
